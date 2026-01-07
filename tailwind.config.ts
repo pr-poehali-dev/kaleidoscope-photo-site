@@ -102,6 +102,26 @@ export default {
 					'50%': { transform: 'rotate(180deg) scale(1.1)' },
 					'100%': { transform: 'rotate(360deg) scale(1)' }
 				},
+				'universe-flight': {
+					'0%': { 
+						transform: 'translate(-50%, -50%) translate(0vw, 0vh) rotate(0deg) scale(0.1)',
+						opacity: '0'
+					},
+					'10%': {
+						opacity: '0.8'
+					},
+					'90%': {
+						opacity: '0.8'
+					},
+					'100%': { 
+						transform: 'translate(-50%, -50%) translate(var(--x), var(--y)) rotate(720deg) scale(1.5)',
+						opacity: '0'
+					}
+				},
+				'twinkle': {
+					'0%, 100%': { opacity: '0.3', transform: 'scale(1)' },
+					'50%': { opacity: '1', transform: 'scale(1.5)' }
+				},
 				'slide-left': {
 					'0%': { transform: 'translateX(100%)' },
 					'100%': { transform: 'translateX(0)' }
@@ -114,7 +134,9 @@ export default {
 				'scale-in': 'scale-in 0.4s ease-out',
 				'float': 'float 3s ease-in-out infinite',
 				'kaleidoscope': 'kaleidoscope 20s linear infinite',
-				'slide-left': 'slide-left 0.5s ease-out'
+				'slide-left': 'slide-left 0.5s ease-out',
+				'universe-flight': 'universe-flight 20s linear infinite',
+				'twinkle': 'twinkle 3s ease-in-out infinite'
 			}
 		}
 	},
